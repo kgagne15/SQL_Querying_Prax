@@ -67,7 +67,7 @@ SELECT category FROM analytics
 GROUP BY category
 HAVING COUNT(*) > 300;
 
---Playstore query 15 / double checked with solution
+--Playstore query 15 / had to use solution
 SELECT app_name, reviews, min_installs, min_installs / reviews AS proportion
 FROM analytics
 WHERE min_installs >= 100000
